@@ -13,7 +13,9 @@
 			var clock;
 			
 			$(document).ready(function() {
-				clock = $('.clock').FlipClock({
+				var date = new Date('2014-01-01 05:02:12 pm');
+
+				clock = $('.clock').FlipClock(date, {
 					clockFace: 'TwelveHourClock'
 				});
 			});

@@ -11,13 +11,18 @@
 
 		<script type="text/javascript">
 			var clock;
-			
+
 			$(document).ready(function() {
-				clock = $('.clock').FlipClock({
-					clockFace: 'TwelveHourClock'
+
+				// Instantiate a counter
+				clock = new FlipClock($('.clock'), 10, {
+					clockFace: 'Counter',
+					autoStart: true,
+					countdown: true
 				});
+				
 			});
 		</script>
 		
 	</body>
-</html>
+</html> 
